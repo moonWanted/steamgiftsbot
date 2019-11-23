@@ -78,8 +78,8 @@ const enterGiveaway = async function () {
                     console.log('You are already participating');
                 }
                 else {
-                    const errorDiv = await giveawayPage.$('.sidebar__error')[0];
-                    if (errorDiv.textContent == ' Previously Won') {
+                    const errorDiv = await giveawayPage.evaluate(() => document.getElementsByClassName("sidebar__error")[0].textContent);
+                    if (errorDiv == ' Previously Won') {
                         console.log('You previously won this game');
                     } else {
                         console.log('Not enough points');
