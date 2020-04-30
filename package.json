@@ -10,7 +10,7 @@
     "assets": "main.js"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsdom": "^15.1.1",
     "pkg": "^4.4.0",
     "puppeteer": "^1.20.0"
